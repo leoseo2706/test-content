@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ehcache>
+<!-- https://www.ehcache.org/documentation/2.7/configuration/data-life.html -->
+<ehcache>
+    <diskStore path="java.io.tmpdir"/>
+
+    	<cache name="content-core.findAllContParam"
+    		   maxElementsInMemory="10000"
+    		   eternal="false"
+    		   timeToIdleSeconds="7200"
+    		   timeToLiveSeconds="10800"
+    		   overflowToDisk="true" />
+</ehcache>
